@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="kpop.css" />
+  <link rel="icon" href="imagens/icon 2.jpg" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  </style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Stray Kids Wiki</title>
+</head>
+
+<body>
+  <header>
+    <span class="logotipo"> Stray Kids </span>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="Index.html" target="_top"> Home </a></li>
+        <li><a href="Galeria.html" target="_top"> Galeria </a></li>
+        <li><a href="Membros.html" target="_top"> Membros </a></li>
+        <li><a href="News.html" target="_top"> News </a></li>
+        <li><a href="Stay.html" target="_top"> Stay </a></li>
+        <!-- Shift+alt+seta para baixo -->
+      </ul>
+    </nav>
+
+    <input class="campo-busca" type="text" name="search" placeholder="Search.." />
+
+    <a href="#"><button id="myBtn"> Contato </button></a>
+  </header>
+  <div class="cadastro-container">
+    <h1>Faça parte do nosso grupo!</h1>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input class="campo-formulario" type="text" id="nome" name="nome" required />
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input class="campo-formulario" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="senha">Senha:</label>
+        <input class="campo-formulario" type="password" id="senha" name="senha" required />
+      </div>
+      <div class="form-group">
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input class="campo-formulario" type="date" id="data_nascimento" name="data_nascimento" />
+      </div>
+      <div class="form-group">
+        <label for="genero">Gênero:</label>
+        <select class="campo-formulario" id="genero" name="genero">
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29265.527140903767!2d-46.663506189348254!3d-23.525635640397237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce586f124c8ce3%3A0x8de8bb2a24689625!2sBom%20Retiro%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1741992919565!5m2!1spt-BR!2sbr"
+    width="3000
+    " height="400" style="border: 0" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+      </div>
+      <div class="social-media-container">
+        <a href="https://www.instagram.com/realstraykids/?hl=en" target="_blank">
+          <img src="imagens/instagram.svg" />
+          <span>
+            Instagram
+          </span>
+        </a>
+        <a href="https://x.com/stray_kids?lang=pt" target="_blank">
+          <img src="imagens/x.svg" />
+          <span>
+            X
+          </span>
+        </a>
+        <a href="https://www.youtube.com/c/StrayKids" target="_blank">
+          <img src="imagens/youtube.svg" />
+          <span>
+            YouTube
+          </span>
+        </a>
+        <a href="https://straykids.jype.com/Default/Gallery" target="_blank">
+          <img src="imagens/logo.jpg" />
+          <span>
+            JYP
+          </span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function () {
+      modal.style.display = "block";
+    };
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+</body>
+
+
+<footer>
+  <div class="rodape">&copy; Stray Kids | Wiki;</div>
+</footer>
+
+</html>

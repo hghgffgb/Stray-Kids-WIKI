@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="kpop.css" />
+    <link rel="icon" href="imagens/icon 2.jpg" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+
+    <title>Stray Kids Wiki</title>
+  </head>
+
+  <header>
+    <span class="logotipo"> Stray Kids </span>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="Index.html" target="_top"> Home </a></li>
+        <li><a href="Galeria.html" target="_top"> Galeria </a></li>
+        <li><a href="Membros.html" target="_top"> Membros </a></li>
+        <li><a href="News.html" target="_top"> News </a></li>
+        <li><a href="Stay.html" target="_top"> Stay </a></li>
+        <!-- Shift+alt+seta para baixo -->
+      </ul>
+    </nav>
+
+    <input
+      class="campo-busca"
+      type="text"
+      name="search"
+      placeholder="Search.."
+    />
+
+    <a href="#"><button id="myBtn"> Contato </button></a>
+  </header>
+
+  <body>
+    <h2>Confira as fotos do novo álbum aqui!</h2>
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="Galeria/1.jpg" style="width: 100%" />
+      </div>
+      <div class="slide fade">
+        <img src="Galeria/2.jpg" style="width: 100%" />
+      </div>
+      <div class="slide fade">
+        <img src="Galeria/3.jpg" style="width: 100%" />
+      </div>
+      <div class="slide fade">
+        <img src="Galeria/4.jpg" style="width: 100%" />
+      </div>
+      <div class="slide fade">
+        <img src="Galeria/5.jpg" style="width: 100%" />
+      </div>
+
+      <div class="slide fade">
+        <img src="Galeria/7.png" style="width: 100%" />
+      </div>
+      <div class="slide fade">
+        <img src="Galeria/8.png" style="width: 100%" />
+      </div>
+      <div class="slide fade">
+        <img src="Galeria/home 1.jpg" style="width: 100%" />
+      </div>
+      <div class="slide fade">
+        <img src="Galeria/gonedays.jpg" style="width: 100%" />
+      </div>
+      <div class="slide fade">
+        <img src="Galeria/yellow.jpg" style="width: 100%" />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script src="Slide-show.js"></script>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+        </div>
+        <div class="social-media-container">
+            <a href="https://www.instagram.com/realstraykids/?hl=en" target="_blank">
+                <img
+                src="imagens/instagram.svg" />
+                <span>
+                    Instagram
+                </span>
+            </a>
+            <a href="https://x.com/stray_kids?lang=pt" target="_blank">
+                <img
+                src="imagens/x.svg" />
+                <span>
+                    X
+                </span>
+            </a>
+            <a href="https://www.youtube.com/c/StrayKids" target="_blank">
+                <img
+                src="imagens/youtube.svg" />
+                <span>
+                    YouTube
+                </span>
+            </a>
+            <a href="https://straykids.jype.com/Default/Gallery" target="_blank">
+                <img
+                src="imagens/logo.jpg" />
+                <span>
+                    JYP
+                </span>
+            </a>
+        </div>
+    </div>
+
+  </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+  </body>
+
+  <img src="anuncio.png" alt="" width="800px" class="anuncio">">
+
+  <footer>
+    <div class="rodape">&copy; Stray Kids | Wiki;</div>
+  </footer>
+</html>

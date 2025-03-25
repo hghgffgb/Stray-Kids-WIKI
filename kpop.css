@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.logotipo {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.capa {
+  margin: 0px;
+  position: absolute;
+  width: 100%;
+}
+
+p {
+  margin: 50px;
+  font-size: 15px;
+  text-align: justify;
+  font-family: "Poppins";
+}
+
+h1 {
+  font-size: 40px;
+  margin: 50px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 25px;
+  margin: 50px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 50px;
+  text-align: left;
+}
+
+h4 {
+  font-size: 25px;
+  margin: 50px;
+  text-align: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  background-color: #202022;
+  z-index: 1;
+}
+
+.nav-links {
+  list-style-type: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a:hover {
+  color: #6090d7;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: "Poppins";
+}
+
+footer {
+  background-color: #202022;
+  font-size: 20px;
+  text-align: center;
+}
+
+.rodape {
+  display: inline-block;
+  margin: 20px;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.video {
+  text-align: center;
+}
+
+.cronologia {
+  display: flex;
+  padding: 0 50px;
+}
+
+.cronologia > div > h3,
+p {
+  margin: 50px, 0 !important;
+}
+
+.divisao-lateral {
+  width: 15px;
+  background-color: #ffd100;
+}
+
+.imagem-cronologia {
+  height: 400px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.cadastro-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  align-content: center;
+  margin: 0px auto;
+}
+
+.cadastro-container>h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.campo-formulario {
+  width: calc(100% - 12px);
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  filter: brightness(0.75)
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+  .cadastro-container {
+    width: 90%;
+  }
+}
+
+/* - */
+
+li,
+a,
+button {
+  font-size: 18px;
+  color: #fff;
+  /* background-attachment: #2d2f34; */
+  text-decoration: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #c71e1e;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+}
+
+/* button:hover{
+    background-color: #39619c;
+} */
+
+@media (max-widht: 800px) {
+
+  li,
+  a,
+  button {
+    font-size: 12px;
+  }
+}
+
+.slideshow-container {
+  max-width: 60%;
+  height: min-content;
+  position: relative;
+  margin: auto;
+  border: #c71e1e 2px solid ;
+}
+
+.slide {
+  display: inline-block;
+}
+
+.slide > img {
+  display: block;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.topico {
+  display: inline-block;
+  width: 250px;
+  text-align: center;
+  vertical-align: top;
+  margin: 25px;
+}
+
+.centro {
+  text-align: center;
+}
+
+iframe {
+  text-align: center;
+  margin-right: 50px;
+}
+
+.imagens-membros {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imagens-membros > img {
+  height: 350px;
+  width: auto;
+}
+
+.x {
+  text-align: center;
+  display: inline-block;
+}
+
+.campo-busca {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+.campo-busca:focus {
+  width: 20%;
+}
+
+.campo-busca {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 60px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("imagens/navbar.jpg");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.campo-busca:focus {
+  width: 20%;
+}
+
+.contagem-titulo {
+  font-family:Poppins, sans-serif;
+  font-size: 50px;
+}
+
+#demo {
+  text-align: center;
+  font-size: 95px;
+  font-family: "Jersey 15";
+  background-color: #c71e1e;
+  color: #fff;
+  border-radius: 18px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  min-width: 350px;
+  width: fit-content
+  /* Could be more or less, depending on screen size */
+}
+
+.modal-header {
+  display: flex;
+  justify-content: end;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content {
+  border-radius: 16px;
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media-container > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-container > a > img {
+  height: 48px;
+  width: 48px;
+}
+
+.social-media-container > a > span {
+  color: #555;
+}
+
+/* The Modal (background) */
+.popup-ad {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+  display: flex;
+  justify-content: center;
+}
+
+.popup-content > img {
+  height: 800px;
+  width: auto;
+}
+
+.blockquote {
+  display: flex;
+  justify-content: center;
+}
+
+.img_teste{
+  text-align: center;
+}
+
+.anuncio {
+  display: block;
+  margin: 0 auto;
+}
